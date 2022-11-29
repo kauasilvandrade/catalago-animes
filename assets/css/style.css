@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+* {}
+
+/* PALETA DE CORES */
+:root {
+
+    --cor0: #fff;
+    --cor1: #000;
+    --cor2: #f78b00;
+    --cor3: #737272;
+    --cor4: #00285f;
+    --cor5: #011c41;
+
+}
+
+/* CORPO */
+body {}
+
+.container {}
+
+/* CABEÇALHO */
+.cabecalho {}
+
+.cabecalho__navegacao {}
+
+.navegacao__logo {}
+
+.navegacao__logo a {}
+
+.navegacao__logo a strong {}
+
+/* BOTÃO ABRIR E FECHAR MENU  */
+
+/* LISTA DE LINKS E BOTÃO ENTRAR */
+.navegacao__listaLinks {}
+
+.listaLinks__item {}
+
+.listaLinks__item a {}
+
+.listaLinks__item .underline {}
+
+.listaLinks__botaoLogin {}
+
+/* INTRODUÇÃO DA PÁGINA */
+.cabecalho__introPagina {}
+
+.introPagina__descricao {}
+
+.introPagina__descricao h2 {}
+
+.introPagina__animesFavoritos {}
+
+.animesFavoritos__anime {}
+
+.introPagina__imagem {}
+
+.introPagina__imagem img {}
+
+/* CONTEÚDO */
+.conteudo {}
+
+/* SEÇÃO CATÁLAGO */
+.secaoCatalago {}
+
+.secaoCatalago h2 {}
+
+/* PESQUISA ANIME */
+.secaoCatalago__campoPesquisaAnime {}
+
+.secaoCatalago__campoPesquisaAnime input {}
+
+.secaoCatalago__campoPesquisaAnime button {}
+
+/* LISTA DE ANIMES */
+.secaoCatalago__listaAnimes {}
+
+.listaAnimes__anime {}
+
+.listaAnimes__anime img {}
+
+.anime__descricaoAnime {}
+
+.anime__descricaoAnime h2 {}
+
+.anime__descricaoAnime p {}
+
+.anime__descricaoAnime a {}
+
+/* SEÇÃO PERSONAGENS */
+.secaoPersonagens {}
+
+.secaoPersonagens h2 {}
+
+/* HISTÓRIA DOS PERSONAGENS */
+.secaoPersonagens__historiaDosPersonagens {}
+
+.secaoPersonagens__historiaPersonagem {}
+
+/* PERSONAGEM */
+.historiaPersonagem__personagem {}
+
+.historiaPersonagem__personagem img {}
+
+/* HISTÓRIA */
+.historiaPersonagem__historia {}
+
+.historiaPersonagem__historia h2 {}
+
+.historiaPersonagem__historia p {}
+
+.historiaPersonagem__historia p strong {}
+
+/* RODAPÉ */
+.rodape {}
+
+.rodape__listaCreditos {}
+
+.listaCreditos__credito {}
+
+.listaCreditos__credito h3 {}
+
+.listaCreditos__credito a {}
+
+.listaCreditos__credito p {}
+
+.credito__redesSociais {}
+
+.credito__redesSociais a {}
+
+.credito__redesSociais a img {}
+
+.rodape p {}
+
+.rodape p a {}
