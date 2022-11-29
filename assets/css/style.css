@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
-* {}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* PALETA DE CORES */
 :root {
@@ -8,32 +12,72 @@
     --cor0: #fff;
     --cor1: #000;
     --cor2: #f78b00;
-    --cor3: #737272;
-    --cor4: #00285f;
-    --cor5: #011c41;
+    --cor3: #c36f01;
+    --cor4: #737272;
+    --cor5: #00285f;
+    --cor6: #011c41;
 
 }
 
 /* CORPO */
-body {}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-.container {}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
 /* CABEÇALHO */
-.cabecalho {}
+.cabecalho {
+    background-color: var(--cor2);
+    padding: 2rem 1rem 3rem 1rem;
+    height: 45rem;
+}
 
-.cabecalho__navegacao {}
+.cabecalho__navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
 
 .navegacao__logo {}
 
-.navegacao__logo a {}
+.navegacao__logo a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4em;
+}
 
 .navegacao__logo a strong {}
 
 /* BOTÃO ABRIR E FECHAR MENU  */
+#btnMenu {
+    border: transparent;
+    background-color: transparent;
+}
+
+.btnMenu__hamburguer {
+    display: block;
+    border-top: 3px solid white;
+    width: 2.1rem;
+}
+
+.btnMenu__hamburguer::before, .btnMenu__hamburguer::after {
+    content: '';
+    display: block;
+    width: 2.1rem;
+    height: 0.1875rem;
+    background-color: white;
+    margin: 6px 0;
+}
 
 /* LISTA DE LINKS E BOTÃO ENTRAR */
-.navegacao__listaLinks {}
+.navegacao__listaLinks {
+    display: none;
+}
 
 .listaLinks__item {}
 
@@ -44,19 +88,39 @@ body {}
 .listaLinks__botaoLogin {}
 
 /* INTRODUÇÃO DA PÁGINA */
-.cabecalho__introPagina {}
+.cabecalho__introPagina {
+    background-color: var(--cor5);
+    border-radius: 10px;
+    box-shadow: 1px 0px 10px 0px rgb(0 0 0 / 50%);
+    padding: 2.5rem 1.3rem;
+    color: var(--cor0);
+    position: relative;
+}
 
 .introPagina__descricao {}
 
-.introPagina__descricao h2 {}
+.introPagina__descricao h2 {
+    font-weight: 500;
+    font-size: 1.8em;
+    margin-bottom: 1.5rem;
+}
 
-.introPagina__animesFavoritos {}
+.introPagina__animesFavoritos {
+    list-style-position: inside;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style-type: '☆';
+}
 
 .animesFavoritos__anime {}
 
 .introPagina__imagem {}
 
-.introPagina__imagem img {}
+.introPagina__imagem img {
+    width: 100%;
+}
 
 /* CONTEÚDO */
 .conteudo {}
@@ -129,7 +193,9 @@ body {}
 
 .credito__redesSociais a {}
 
-.credito__redesSociais a img {}
+.credito__redesSociais a img {
+    width: 10px;
+}
 
 .rodape p {}
 
