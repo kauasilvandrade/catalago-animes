@@ -131,7 +131,9 @@ body {
 }
 
 /* SEÇÃO CATÁLAGO */
-.secaoCatalago {}
+.secaoCatalago {
+    margin-bottom: 2rem;
+}
 
 .secaoCatalago h2 {
     color: var(--cor5);
@@ -166,8 +168,8 @@ body {
     padding: 0 1rem;
 }
 
-.secaoCatalago__campoPesquisaAnime input::-webkit-calendar-picker-indicator {
-    display: none;
+.secaoCatalago__campoPesquisaAnime input::placeholder {
+    font-size: 0.9em;
 }
 
 .secaoCatalago__campoPesquisaAnime button {
@@ -185,14 +187,21 @@ body {
 .secaoCatalago__listaAnimes {
     list-style: none;
     display: flex;
-    flex-direction: column;
     gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .listaAnimes__anime {
     background-color: var(--cor4);
     border-radius: 0px 0px 10px 10px;
     box-shadow: 1px 0px 10px 0px rgb(0 0 0 / 20%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 18rem;
+    flex: 1 1 14rem;
 }
 
 .listaAnimes__anime img {
@@ -211,6 +220,7 @@ body {
 
 .anime__descricaoAnime h2 {
     color: var(--cor1);
+    text-align: center;
 }
 
 .anime__descricaoAnime p {
@@ -235,12 +245,27 @@ body {
 /* SEÇÃO PERSONAGENS */
 .secaoPersonagens {}
 
-.secaoPersonagens h2 {}
+.secaoPersonagens h2 {
+    color: var(--cor5);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    font-size: 2em;
+}
 
 /* HISTÓRIA DOS PERSONAGENS */
-.secaoPersonagens__historiaDosPersonagens {}
+.secaoPersonagens__historiaDosPersonagens {
+    background-color: var(--cor4);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 0px 10px 0px rgb(0 0 0 / 20%);
+    padding: 1.5rem 1rem; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
 
-.secaoPersonagens__historiaPersonagem {}
+.secaoPersonagens__historiaPersonagem {
+    flex: 1 1 18rem;
+}
 
 /* PERSONAGEM */
 .historiaPersonagem__personagem {}
@@ -250,9 +275,17 @@ body {
 /* HISTÓRIA */
 .historiaPersonagem__historia {}
 
-.historiaPersonagem__historia h2 {}
+.historiaPersonagem__historia h2 {
+    font-size: 1.6em;
+    text-align: center;
+}
 
-.historiaPersonagem__historia p {}
+.historiaPersonagem__historia p {
+    color: var(--cor5);
+    line-height: 1.5em;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
 
 .historiaPersonagem__historia p strong {}
 
