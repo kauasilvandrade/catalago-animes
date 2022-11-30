@@ -13,9 +13,10 @@
     --cor1: #000;
     --cor2: #f78b00;
     --cor3: #c36f01;
-    --cor4: #737272;
-    --cor5: #00285f;
-    --cor6: #011c41;
+    --cor4: #ededed;
+    --cor5: #737272;
+    --cor6: #00285f;
+    --cor7: #011c41;
 
 }
 
@@ -48,7 +49,7 @@ body {
 
 .navegacao__logo a {
     text-decoration: none;
-    color: black;
+    color: var(--cor1);
     font-size: 1.4em;
 }
 
@@ -62,7 +63,7 @@ body {
 
 .btnMenu__hamburguer {
     display: block;
-    border-top: 3px solid white;
+    border-top: 3px solid var(--cor0);
     width: 2.1rem;
 }
 
@@ -71,7 +72,7 @@ body {
     display: block;
     width: 2.1rem;
     height: 0.1875rem;
-    background-color: white;
+    background-color: var(--cor0);
     margin: 6px 0;
 }
 
@@ -90,7 +91,7 @@ body {
 
 /* INTRODUÇÃO DA PÁGINA */
 .cabecalho__introPagina {
-    background-color: var(--cor5);
+    background-color: var(--cor6);
     border-radius: 10px;
     box-shadow: 1px 0px 10px 0px rgb(0 0 0 / 50%);
     padding: 2.5rem 1.3rem;
@@ -132,14 +133,49 @@ body {
 /* SEÇÃO CATÁLAGO */
 .secaoCatalago {}
 
-.secaoCatalago h2 {}
+.secaoCatalago h2 {
+    color: var(--cor5);
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    font-size: 1.6em;
+}
 
 /* PESQUISA ANIME */
-.secaoCatalago__campoPesquisaAnime {}
+.secaoCatalago__campoPesquisaAnime {
+    background-color: var(--cor4);
+    padding: 1rem;
+    border-radius: 5px;
+    height: 5.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
 
-.secaoCatalago__campoPesquisaAnime input {}
+.campoPesquisaAnime__inputBox {
+    display: flex;
+    width: 100%;
+}
 
-.secaoCatalago__campoPesquisaAnime button {}
+.secaoCatalago__campoPesquisaAnime input {
+    outline: none;
+    height: 2.3rem;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    width: 85%;
+    padding: 0 1rem;
+}
+
+.secaoCatalago__campoPesquisaAnime button {
+    background-color: var(--cor6);
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    max-width: 5.6rem;
+    width: 100%;
+    color: var(--cor0);
+    font-weight: 500;
+    font-size: 1em;
+}
 
 /* LISTA DE ANIMES */
 .secaoCatalago__listaAnimes {}
@@ -147,7 +183,7 @@ body {
 .listaAnimes__anime {}
 
 .listaAnimes__anime img {
-    width: 10px;
+    width: 100%;
 }
 
 .anime__descricaoAnime {}
