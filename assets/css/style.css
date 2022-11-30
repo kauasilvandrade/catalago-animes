@@ -166,6 +166,10 @@ body {
     padding: 0 1rem;
 }
 
+.secaoCatalago__campoPesquisaAnime input::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
 .secaoCatalago__campoPesquisaAnime button {
     background-color: var(--cor6);
     border: none;
@@ -178,21 +182,55 @@ body {
 }
 
 /* LISTA DE ANIMES */
-.secaoCatalago__listaAnimes {}
+.secaoCatalago__listaAnimes {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
-.listaAnimes__anime {}
+.listaAnimes__anime {
+    background-color: var(--cor4);
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 1px 0px 10px 0px rgb(0 0 0 / 20%);
+}
 
 .listaAnimes__anime img {
     width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+
 }
 
-.anime__descricaoAnime {}
+.anime__descricaoAnime {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1rem 2rem 1rem;
+}
 
-.anime__descricaoAnime h2 {}
+.anime__descricaoAnime h2 {
+    color: var(--cor1);
+}
 
-.anime__descricaoAnime p {}
+.anime__descricaoAnime p {
+    color: var(--cor5);
+    text-align: center;
+    margin-bottom: 1.3rem;
+    line-height: 1.5em;
+}
 
-.anime__descricaoAnime a {}
+.anime__descricaoAnime a {
+    background-color: var(--cor6);
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.7rem;
+    text-decoration: none;
+    color: var(--cor0);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
 
 /* SEÇÃO PERSONAGENS */
 .secaoPersonagens {}
