@@ -32,13 +32,17 @@
                 </div>
 
                 <!-- BOTÃO ABRIR E FECHAR MENU -->
-                <button id="btnMenu">
+                <button id="btnMenu"
+                aria-controls="menu"
+                aria-label="Botão abrir menu"
+                aria-haspopup="true"
+                aria-expanded="false">
                     <span class="btnMenu__hamburguer"></span>
                 </button>
 
 
                 <!-- LISTA DE LINKS E BOTÃO ENTRAR -->
-                <ul class="navegacao__listaLinks">
+                <ul class="navegacao__listaLinks" id="menu" role="menu">
 
                     <li class="listaLinks__item">
 
@@ -505,6 +509,8 @@
         <p><a href="#">KauaSilvaAndrade.dev</a> - Front-End Developer</p>
 
     </footer>
+
+    <script src="assets/js/script.js"></script>
 
 </body>
 </html>

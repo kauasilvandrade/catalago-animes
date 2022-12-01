@@ -1,5 +1,19 @@
 @charset "UTF-8";
 
+/* PALETA DE CORES */
+:root {
+
+    --cor0: #fff;
+    --cor1: #000;
+    --cor2: #f78b00;
+    --cor3: #d57b05;
+    --cor4: #ededed;
+    --cor5: #737272;
+    --cor6: #00285f;
+    --cor7: #004bb1;
+
+}
+
 @media screen and (min-width: 500px) {
     
     /* INTRODUÇÃO DA PÁGINA */
@@ -16,6 +30,11 @@
 
 @media screen and (min-width: 672px) {
     
+    /* LISTA DE LINKS E BOTÃO ENTRAR */
+    .navegacao__listaLinks {
+        display: none;
+    }
+
     /* INTRO PÁGINA */
     .cabecalho__introPagina {
         display: flex;
