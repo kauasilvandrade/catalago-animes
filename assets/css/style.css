@@ -243,7 +243,9 @@ body {
 }
 
 /* SEÇÃO PERSONAGENS */
-.secaoPersonagens {}
+.secaoPersonagens {
+    margin-bottom: 3.4rem;
+}
 
 .secaoPersonagens h2 {
     color: var(--cor5);
@@ -302,26 +304,61 @@ body {
 .historiaPersonagem__historia p strong {}
 
 /* RODAPÉ */
-.rodape {}
+.rodape {
+    background-color: var(--cor2);
+}
 
-.rodape__listaCreditos {}
+.rodape__listaCreditos {
+    list-style: none;
+    display: flex;
+    padding: 3rem 1rem;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
 
-.listaCreditos__credito {}
+.listaCreditos__credito {
+    flex: 1 1 14.2rem;
+}
 
-.listaCreditos__credito h3 {}
+.listaCreditos__credito h3 {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: var(--cor0);
+}
 
-.listaCreditos__credito a {}
+.listaCreditos__credito a, 
+.listaCreditos__credito p {
+    display: block;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    text-decoration: none;
+    color: var(--cor4);
+}
 
-.listaCreditos__credito p {}
-
-.credito__redesSociais {}
+.credito__redesSociais {
+    display: flex;
+    gap: 1.5rem;
+}
 
 .credito__redesSociais a {}
 
 .credito__redesSociais a img {
-    width: 10px;
+    width: 100%;
+    max-width: 2.5rem;
+    filter: invert(1);
 }
 
-.rodape p {}
+.rodape > p {
+    background-color: var(--cor6);
+    padding: 1rem;
+    font-size: 0.9em;
+    text-align: center;
+    color: white;
+}
 
-.rodape p a {}
+.rodape p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 1.5em;
+}
