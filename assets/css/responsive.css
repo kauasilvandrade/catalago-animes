@@ -30,9 +30,62 @@
 
 @media screen and (min-width: 672px) {
     
+    /* BOTÃO ABRIR E FECHAR MENU  */
+    #btnMenu {
+        display: none;
+    }
+    
     /* LISTA DE LINKS E BOTÃO ENTRAR */
     .navegacao__listaLinks {
-        display: none;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: unset;
+        padding: 0;
+        background-color: transparent;
+        transition: unset;
+        gap: 0.8rem;
+    }
+
+    .listaLinks__item:nth-child(3) {
+        margin-bottom: 0;
+    }
+
+    .listaLinks__item {
+        box-shadow: unset;
+    }
+
+    .listaLinks__item a {
+        padding: 0.7rem;
+        position: relative;
+    }
+
+    .listaLinks__item a::after {
+        content: '';
+        width: 100%;
+        position: absolute;
+        height: 2px;
+        background-color: var(--cor6);
+        left: 0;
+        bottom: 0;
+        transition: .5s ease-in-out;
+        transform: scale(0);
+    }
+
+    .listaLinks__item a:hover {
+        color: var(--cor6);
+        background-color: transparent;
+    }
+
+    .listaLinks__item a:hover::after {
+        transform: scale(1);
+    }
+
+    .listaLinks__botaoLogin button {
+        padding: 0.7rem 2.1rem;
+        font-size: 1em;
     }
 
     /* INTRO PÁGINA */
