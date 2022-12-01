@@ -16,7 +16,7 @@
     --cor4: #ededed;
     --cor5: #737272;
     --cor6: #00285f;
-    --cor7: #011c41;
+    --cor7: #004bb1;
 
 }
 
@@ -114,14 +114,18 @@ body {
     flex-direction: column;
     gap: 0.5rem;
     list-style-type: '☆';
+    margin-bottom: 2rem;
 }
 
 .animesFavoritos__anime {}
 
-.introPagina__imagem {}
+.introPagina__imagem {
+    margin: auto;
+    max-width: 22rem;
+    transition: all .5s;
+}
 
 .introPagina__imagem img {
-    max-width: 25rem;
     width: 100%;
 }
 
@@ -181,6 +185,12 @@ body {
     color: var(--cor0);
     font-weight: 500;
     font-size: 1em;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.secaoCatalago__campoPesquisaAnime button:hover{
+    background-color: var(--cor7);
 }
 
 /* LISTA DE ANIMES */
@@ -240,6 +250,11 @@ body {
     color: var(--cor0);
     font-weight: 600;
     letter-spacing: 1px;
+    transition: .5s;
+}
+
+.anime__descricaoAnime a:hover {
+    background-color: var(--cor7);
 }
 
 /* SEÇÃO PERSONAGENS */
@@ -333,6 +348,24 @@ body {
     line-height: 1.5em;
     text-decoration: none;
     color: var(--cor4);
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.listaCreditos__credito a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 40%;
+    background-color: var(--cor0);
+    left: 0;
+    bottom: -3px;
+    transition: .5s;
+    transform: scale(0);
+}
+
+.listaCreditos__credito a:hover::after {
+    transform: scaleX(1);
 }
 
 .credito__redesSociais {
@@ -361,4 +394,21 @@ body {
     text-decoration: none;
     font-weight: 600;
     line-height: 1.5em;
+    position: relative;
+}
+
+.rodape p a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: var(--cor0);
+    left: 0;
+    bottom: -3px;
+    transform: scaleX(0);
+    transition: .5s;
+}
+
+.rodape p a:hover::after {
+    transform: scaleX(1);
 }

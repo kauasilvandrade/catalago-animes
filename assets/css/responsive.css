@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 500px) {
+    
+    /* INTRODUÇÃO DA PÁGINA */
+    .introPagina__animesFavoritos {
+        display: block;
+        columns: 2;
+    }
+
+    .animesFavoritos__anime {
+        margin-bottom: 0.5rem;
+    }
+
+}
+
+@media screen and (min-width: 672px) {
+    
+    /* INTRO PÁGINA */
+    .cabecalho__introPagina {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2.5rem 2.3rem;
+        gap: 1.5rem;
+    }
+
+    .introPagina__animesFavoritos {
+        margin-bottom: 0;
+    }
+
+    .animesFavoritos__anime {
+        margin-bottom: 1rem;
+    }
+
+    .introPagina__imagem {
+        margin: 0;
+    }
+
+    /* PESQUISA ANIME */
+    .secaoCatalago__campoPesquisaAnime {
+        padding: 2rem;
+        height: 8.375rem;
+    }
+
+    .secaoCatalago__campoPesquisaAnime input {
+        height: 3.3rem;
+    }
+
+    .secaoCatalago__campoPesquisaAnime button {
+        max-width: 8rem;
+        font-size: 1.1em;
+    }
+
+    /* HISTÓRIA DOS PERSONAGENS */
+    .secaoPersonagens__historiaDosPersonagens {
+        gap: 2rem;
+    }
+
+    .secaoPersonagens__historiaPersonagem {
+        position: relative;
+    }
+
+    .secaoPersonagens__historiaPersonagem:nth-child(1)::after {
+        width: 2px;
+        position: absolute;
+        right: -18px;
+        height: 50%;
+        top: 28%;
+    }
+
+    /* RODAPÉ */
+    .rodape__listaCreditos {
+        padding: 3rem 1rem 5rem 1rem;
+    }
+
+}
